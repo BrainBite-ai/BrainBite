@@ -1,13 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>BrainBite</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<body style="font-family: Arial; text-align: center; padding: 50px;">
-  <h1>🧠 BrainBite</h1>
-  <h3>Take a Bite of Knowledge</h3>
-  <p>Your AI-powered study partner is live 🚀</p>
-</body>
-</html>
+export default function Home() { return ( <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white"> {/* Navbar */} <nav className="flex justify-between items-center px-8 py-5 border-b border-gray-800"> <h1 className="text-2xl font-bold text-purple-400">🧠 BrainBite</h1> <ul className="flex gap-6 text-gray-300"> <li className="hover:text-purple-400 cursor-pointer">Home</li> <li className="hover:text-purple-400 cursor-pointer">Features</li> <li className="hover:text-purple-400 cursor-pointer">Feedback</li> <li className="hover:text-purple-400 cursor-pointer">Login</li> </ul> </nav>
+
+{/* Hero Section */}
+  <section className="flex flex-col items-center justify-center text-center px-6 py-24">
+    <h2 className="text-5xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+      Take a Bite of Knowledge
+    </h2>
+    <p className="max-w-2xl text-gray-300 text-lg mb-8">
+      BrainBite helps you summarize text, PDFs, generate MCQs, take tests and chat with our AI Addy — your personal study partner for every class.
+    </p>
+    <div className="flex gap-6 flex-wrap justify-center">
+      <button className="px-8 py-3 rounded-2xl bg-purple-500 hover:bg-purple-600 transition font-semibold shadow-lg">
+        Summarize Content
+      </button>
+      <button className="px-8 py-3 rounded-2xl bg-pink-500 hover:bg-pink-600 transition font-semibold shadow-lg">
+        Generate MCQs
+      </button>
+      <button className="px-8 py-3 rounded-2xl border border-purple-400 hover:bg-purple-400 hover:text-black transition font-semibold">
+        Chat with Addy 🤖
+      </button>
+    </div>
+  </section>
+
+  {/* Features */}
+  <section className="px-10 py-16 grid md:grid-cols-3 gap-8">
+    <div className="bg-gray-900 rounded-2xl p-6 shadow-xl">
+      <h3 className="text-xl font-bold text-purple-400 mb-3">📘 Smart Summaries</h3>
+      <p className="text-gray-400">Upload text or PDFs and get exam‑ready summaries in points.</p>
+    </div>
+    <div className="bg-gray-900 rounded-2xl p-6 shadow-xl">
+      <h3 className="text-xl font-bold text-pink-400 mb-3">📝 MCQs & Tests</h3>
+      <p className="text-gray-400">Practice class‑wise MCQs and test yourself instantly.</p>
+    </div>
+    <div className="bg-gray-900 rounded-2xl p-6 shadow-xl">
+      <h3 className="text-xl font-bold text-blue-400 mb-3">🤖 Addy AI</h3>
+      <p className="text-gray-400">Ask doubts in Hindi, English, Sanskrit & more.</p>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="border-t border-gray-800 py-6 text-center text-gray-500">
+    <p>© 2026 BrainBite • Free AI Education Platform</p>
+    <p>Contact: aj436469@gmail.com</p>
+  </footer>
+</main>
+
+); }
